@@ -36,6 +36,8 @@ RUN docker-php-ext-install \
       tokenizer \
       xml
 
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+
 # Make www-data the default user
 RUN usermod -u ${USER_ID} www-data \
     && groupmod -g ${GROUP_ID} www-data \

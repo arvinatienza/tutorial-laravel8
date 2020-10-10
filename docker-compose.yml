@@ -10,6 +10,7 @@ services:
     env_file: ".env"
     volumes:
       - ".:/var/www/html"
+      - "./php.ini-development:/usr/local/etc/php/php.ini"
       - "vendor:/var/www/html/vendor"
     ports:
       - "8080:80"

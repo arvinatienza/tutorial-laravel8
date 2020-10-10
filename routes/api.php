@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\EmployeesController;
+use App\Http\Controllers\API\ProjectsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//Route::get('/api/projects', function () {
+    //return 'Hello World';
+//});
+
+Route::get("employees", [EmployeesController::class, "index"]);
+Route::get("projects", [ProjectsController::class, "index"]);
