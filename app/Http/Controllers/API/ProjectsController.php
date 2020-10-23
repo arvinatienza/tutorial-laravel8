@@ -16,7 +16,7 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        return Project::all();
+        return \App\Models\Project::all();
     }
 
     /**
@@ -48,7 +48,7 @@ class ProjectsController extends Controller
      */
     public function show(Project $project)
     {
-        //
+        return \App\Models\Project::find($project);
     }
 
     /**

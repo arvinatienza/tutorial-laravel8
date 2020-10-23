@@ -11,4 +11,29 @@ class Project extends Model
     //protected $attributes = [
         //'delayed'
     //];
+
+    /**
+     * Get parent
+     */
+    public function parent()
+    {
+        return $this->belongsTo('App\Models\Project', 'parent_id');
+    }
+
+
+    /**
+     * Get subprojects
+     */
+    public function subProjects()
+    {
+        return $this->hasMany('App\Models\Project');
+    }
+
+    /**
+     * Get manager
+     */
+    public function manager()
+    {
+        return $this->belongsTo('App\Models\Employee', 'manager_id');
+    }
 }

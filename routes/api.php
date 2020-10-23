@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\EmployeesController;
 use App\Http\Controllers\API\ProjectsController;
+use App\Http\Controllers\PhotoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +25,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     //return 'Hello World';
 //});
 
-Route::get("employees", [EmployeesController::class, "index"]);
+Route::middleware('auth:api')->get("employees", [EmployeesController::class, "index"]);
 Route::get("projects", [ProjectsController::class, "index"]);
+Route::get("projects/{id}", [ProjectsController::class, "show"]);
+
+Route::resources([
+    'photos' => PhotoController::class,
+]);
