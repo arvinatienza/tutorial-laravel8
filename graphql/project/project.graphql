@@ -1,0 +1,14 @@
+extend type Query {
+    projects (name: String @eq): [Project!]! @paginate(defaultCount: 10)
+    project(id: ID @eq): Project @find
+}
+
+type Project {
+    id: ID!
+    number: String!
+    name: String!
+    parent: Project
+    manager: Employee!
+    created_at: DateTime!
+    updated_at: DateTime!
+}

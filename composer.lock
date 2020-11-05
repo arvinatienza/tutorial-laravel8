@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b5789f72845562442ad7d561ba79461",
+    "content-hash": "705c7ff7efc84c58c80dce9e08f9fa20",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1967,16 +1967,16 @@
         },
         {
             "name": "nuwave/lighthouse",
-            "version": "v4.17.0",
+            "version": "v4.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "94b2a44b1a7a17edb31cc16f8928b330c942db8a"
+                "reference": "84930cf990417f3839a984038015bae38add9446"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/94b2a44b1a7a17edb31cc16f8928b330c942db8a",
-                "reference": "94b2a44b1a7a17edb31cc16f8928b330c942db8a",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/84930cf990417f3839a984038015bae38add9446",
+                "reference": "84930cf990417f3839a984038015bae38add9446",
                 "shasum": ""
             },
             "require": {
@@ -2076,7 +2076,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-08T14:40:30+00:00"
+            "time": "2020-11-01T12:35:39+00:00"
         },
         {
             "name": "nyholm/psr7",
@@ -3154,12 +3154,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "ae789a8a2ad189ce7e8216942cdb9b77319f5eb8"
+                "reference": "04c3a31fe8ea94b42c9e2d1acc93d19782133b00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/ae789a8a2ad189ce7e8216942cdb9b77319f5eb8",
-                "reference": "ae789a8a2ad189ce7e8216942cdb9b77319f5eb8",
+                "url": "https://api.github.com/repos/symfony/console/zipball/04c3a31fe8ea94b42c9e2d1acc93d19782133b00",
+                "reference": "04c3a31fe8ea94b42c9e2d1acc93d19782133b00",
                 "shasum": ""
             },
             "require": {

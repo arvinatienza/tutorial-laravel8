@@ -1,0 +1,13 @@
+extend type Query {
+    employees: [Employee!]! @paginate(defaultCount: 10)
+    employee(id: ID @eq): Employee @find
+}
+
+type Employee {
+    id: ID!
+    first_name: String!
+    last_name: String!
+    managed_projects: [Project!] @hasMany
+    created_at: DateTime!
+    updated_at: DateTime!
+}
